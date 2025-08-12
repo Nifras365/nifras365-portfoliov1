@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nifras MJM - Software Engineer</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body class="bg-gray-900 text-gray-300">
+
+    <header class="bg-gray-900/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-xl font-bold text-white">Nifras MJM</a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#experience" class="hover:text-cyan-400 transition-colors">Experience</a>
+                <a href="#projects" class="hover:text-cyan-400 transition-colors">Projects</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <nav class="flex flex-col items-center space-y-4 py-4">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#experience" class="hover:text-cyan-400 transition-colors">Experience</a>
+                <a href="#projects" class="hover:text-cyan-400 transition-colors">Projects</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="container mx-auto px-6 py-32 flex flex-col md:flex-row items-center justify-center text-center md:text-left min-h-screen">
+            <div class="md:w-1/2">
+                <h1 class="text-4xl md:text-6xl font-bold text-white">Nifras MJM</h1>
+                <h2 class="text-2xl md:text-3xl text-cyan-400 mt-2">Software Engineer</h2>
+                <p class="mt-4 max-w-lg mx-auto md:mx-0">Aspiring Software Developer with hands-on experience in microservices, API development, and database optimization. Passionate about developing efficient and scalable software solutions.</p>
+                <div class="mt-8 flex justify-center md:justify-start space-x-4">
+                    <a href="#projects" class="bg-cyan-500 text-white font-semibold py-2 px-6 rounded-lg hover:bg-cyan-600 transition-colors">View My Work</a>
+                    <a href="#contact" class="bg-gray-700 text-white font-semibold py-2 px-6 rounded-lg hover:bg-gray-600 transition-colors">Contact Me</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
+                <img src="images/IMG_20221126_095704.jpg" class="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-cyan-500 shadow-lg">
+            </div>
+        </section>
+
+        <section id="about" class="py-20 bg-gray-800 section-fade-in">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-white mb-12">About Me</h2>
+                <div class="flex flex-col md:flex-row gap-12 items-center">
+                    <div class="md:w-2/3">
+                        <h3 class="text-2xl font-semibold text-white mb-4">Who I Am</h3>
+                        <p class="mb-4">I'm a passionate and driven Software Engineer currently pursuing a degree in Computer Engineering at the University of Ruhuna. With a solid background in both technical recruitment and full-stack projects, I bring a unique perspective to software development.</p>
+                        <p>My experience includes developing and maintaining microservices, designing secure APIs with Java Spring Boot, and optimizing SQL queries for enhanced performance. I thrive in collaborative environments and am always eager to learn and apply best practices in backend development.</p>
+                    </div>
+                    <div class="md:w-1/3">
+                        <h3 class="text-2xl font-semibold text-white mb-4">Technical Skills</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-cyan-900/50 text-cyan-300 py-1 px-3 rounded-full text-sm">Java</span>
+                            <span class="bg-cyan-900/50 text-cyan-300 py-1 px-3 rounded-full text-sm">Spring Boot</span>
+                            <span class="bg-cyan-900/50 text-cyan-300 py-1 px-3 rounded-full text-sm">JavaScript</span>
+                            <span class="bg-cyan-900/50 text-cyan-300 py-1 px-3 rounded-full text-sm">React.js</span>
+                            <span class="bg-cyan-900/50 text-cyan-300 py-1 px-3 rounded-full text-sm">Node.js</span>
+                            <span class="bg-cyan-900/50 text-cyan-300 py-1 px-3 rounded-full text-sm">MERN Stack</span>
+                            <span class="bg-cyan-900/50 text-cyan-300 py-1 px-3 rounded-full text-sm">MySQL</span>
+                            <span class="bg-cyan-900/50 text-cyan-300 py-1 px-3 rounded-full text-sm">PostgreSQL</span>
+                            <span class="bg-cyan-900/50 text-cyan-300 py-1 px-3 rounded-full text-sm">MongoDB</span>
+                            <span class="bg-cyan-900/50 text-cyan-300 py-1 px-3 rounded-full text-sm">Docker</span>
+                            <span class="bg-cyan-900/50 text-cyan-300 py-1 px-3 rounded-full text-sm">Git</span>
+                            <span class="bg-cyan-900/50 text-cyan-300 py-1 px-3 rounded-full text-sm">AWS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="py-20 section-fade-in">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-white mb-12">Work Experience</h2>
+                <div class="relative border-l-2 border-cyan-500 ml-6">
+                    <div class="mb-10 ml-10">
+                        <div class="absolute -left-4 w-8 h-8 bg-cyan-500 rounded-full mt-1.5 border-4 border-gray-900"></div>
+                        <h3 class="text-xl font-semibold text-white">Java Backend Intern</h3>
+                        <p class="text-cyan-400">MegaBliss and MegaTransact Ltd | Auckland, NZ (Remote)</p>
+                        <p class="text-gray-400 text-sm">May 2024 - Present</p>
+                        <ul class="mt-4 list-disc list-inside text-gray-300">
+                            <li>Developed and maintained microservices for a vehicle booking application.</li>
+                            <li>Designed and implemented secure APIs using Java Spring Boot.</li>
+                            <li>Optimized SQL queries, improving database performance and data retrieval speed.</li>
+                            <li>Participated in code reviews and agile team meetings.</li>
+                        </ul>
+                    </div>
+                    <div class="mb-10 ml-10">
+                        <div class="absolute -left-4 w-8 h-8 bg-cyan-500 rounded-full mt-1.5 border-4 border-gray-900"></div>
+                        <h3 class="text-xl font-semibold text-white">Technical Recruiter</h3>
+                        <p class="text-cyan-400">Hire IT People | NJ, USA (Remote)</p>
+                        <p class="text-gray-400 text-sm">Oct 2022 - Sep 2023</p>
+                         <ul class="mt-4 list-disc list-inside text-gray-300">
+                            <li>Sourced, screened, and recruited top-tier technical candidates.</li>
+                            <li>Managed job postings and candidate profiles.</li>
+                            <li>Participated in rate and salary negotiations.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-20 bg-gray-800 section-fade-in">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-white mb-12">My Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Online Recruitment Platform</h3>
+                            <p class="text-gray-400 mb-4">A full-stack MERN platform where employers can post jobs and jobseekers can apply. Features an alternative backend in Spring Boot.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-gray-700 text-cyan-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">MERN</span>
+                                <span class="bg-gray-700 text-cyan-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Spring Boot</span>
+                                <span class="bg-gray-700 text-cyan-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">MySQL</span>
+                            </div>
+                            <div class="flex space-x-4 mt-4">
+                                <a href="#" class="text-cyan-400 hover:text-cyan-300 font-semibold">Live Demo</a>
+                                <a href="#" class="text-cyan-400 hover:text-cyan-300 font-semibold">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Online Laptop Store</h3>
+                            <p class="text-gray-400 mb-4">An e-commerce site for laptops with user accounts, shopping carts, and an admin interface for product and inventory management.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-gray-700 text-cyan-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">React</span>
+                                <span class="bg-gray-700 text-cyan-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Java</span>
+                                <span class="bg-gray-700 text-cyan-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Spring Boot</span>
+                                <span class="bg-gray-700 text-cyan-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">PostgreSQL</span>
+                            </div>
+                            <div class="flex space-x-4 mt-4">
+                                <a href="#" class="text-cyan-400 hover:text-cyan-300 font-semibold">Live Demo</a>
+                                <a href="#" class="text-cyan-400 hover:text-cyan-300 font-semibold">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Faculty Sports Management Website</h3>
+                            <p class="text-gray-400 mb-4">A group project to manage faculty sports activities, including enrollments, announcements, and live scores. I served as Project Manager and Backend Developer.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-gray-700 text-cyan-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">MERN</span>
+                                <span class="bg-gray-700 text-cyan-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Tailwind</span>
+                                <span class="bg-gray-700 text-cyan-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Agile</span>
+                            </div>
+                            <div class="flex space-x-4 mt-4">
+                                <a href="#" class="text-cyan-400 hover:text-cyan-300 font-semibold">Live Demo</a>
+                                <a href="#" class="text-cyan-400 hover:text-cyan-300 font-semibold">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 section-fade-in">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-white">Get In Touch</h2>
+                <p class="text-lg text-gray-400 mt-4 max-w-2xl mx-auto">I'm currently looking for new opportunities. If you have a project in mind or just want to say hi, feel free to reach out!</p>
+                <a href="mailto:nifrasmjm56@gmail.com" class="mt-8 inline-block bg-cyan-500 text-white font-semibold text-lg py-3 px-8 rounded-lg hover:bg-cyan-600 transition-colors">Say Hello</a>
+                <div class="mt-12 flex justify-center space-x-6">
+                    <a href="#" aria-label="LinkedIn Profile" class="text-gray-400 hover:text-cyan-400">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"/></svg>
+                    </a>
+                    <a href="#" aria-label="GitHub Profile" class="text-gray-400 hover:text-cyan-400">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2c-5.52 0-10 4.48-10 10 0 4.42 2.87 8.17 6.84 9.5.5.09.68-.22.68-.48 0-.24-.01-1.02-.01-1.84-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85 0 1.34-.01 2.42-.01 2.75 0 .27.18.58.69.48 3.96-1.33 6.83-5.08 6.83-9.5C22 6.48 17.52 2 12 2z" clip-rule="evenodd"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 border-t border-gray-700">
+        <div class="container mx-auto px-6 py-6 text-center text-gray-500">
+            <p>&copy; 2024 Nifras MJM. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        const mobileNavLinks = mobileMenu.querySelectorAll('a');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        const sections = document.querySelectorAll('.section-fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+
+</body>
+</html>
