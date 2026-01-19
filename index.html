@@ -3,13 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nifras MJM - Software Engineer</title>
+    <title>Nifras MJM | Software Engineer — Java, Spring Boot, Microservices</title>
+    <meta name="description" content="Software Engineer specializing in Java Spring Boot, microservices architecture, and API development. Currently pursuing Computer Engineering at University of Ruhuna. Open to backend and full-stack opportunities.">
+    <meta name="keywords" content="Software Engineer, Java Developer, Spring Boot, Microservices, Backend Developer, Full Stack Developer, API Development">
+    <meta name="author" content="Nifras MJM">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nifras365.github.io/">
+    <meta property="og:title" content="Nifras MJM | Software Engineer">
+    <meta property="og:description" content="Software Engineer specializing in Java Spring Boot, microservices, and scalable backend systems.">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <link rel="icon" type="image/png" href="images/favicon.png">
     
     <script src="https://cdn.tailwindcss.com"></script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
@@ -18,258 +30,807 @@
 </head>
 <body class="bg-gray-900 text-gray-300">
 
-    <header class="bg-gray-900/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="bg-gray-900/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 border-b border-gray-800/50">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#home" class="text-xl font-bold text-white tracking-wider">Nifras MJM</a>
-            <nav class="hidden md:flex space-x-8 text-sm">
-                <a href="#about" class="nav-link">About</a>
-                <a href="#experience" class="nav-link">Experience</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#contact" class="nav-link">Contact</a>
+            <a href="#home" class="text-xl font-bold text-white tracking-wider hover:text-cyan-400 transition-colors" aria-label="Go to homepage">
+                <span class="text-cyan-400">&lt;</span>Nifras<span class="text-cyan-400">/&gt;</span>
+            </a>
+            <nav class="hidden md:flex space-x-8 text-sm" aria-label="Main navigation">
+                <a href="#about" class="nav-link" data-section="about">About</a>
+                <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+                <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+                <a href="resume.pdf" class="nav-link nav-link-cta" target="_blank" rel="noopener noreferrer" aria-label="Download Resume (opens in new tab)">
+                    <i class="fas fa-download mr-1"></i> Resume
+                </a>
             </nav>
-            <button id="mobile-menu-button" class="md:hidden text-white">
-                <i class="fas fa-bars text-xl"></i>
+            <button id="mobile-menu-button" class="md:hidden text-white p-2 rounded-lg hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-cyan-400" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+                <i class="fas fa-bars text-xl" aria-hidden="true"></i>
             </button>
         </div>
-        <div id="mobile-menu" class="hidden md:hidden bg-gray-800">
-            <nav class="flex flex-col items-center space-y-4 py-4">
-                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
-                <a href="#experience" class="hover:text-cyan-400 transition-colors">Experience</a>
-                <a href="#projects" class="hover:text-cyan-400 transition-colors">Projects</a>
-                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-gray-800/95 backdrop-blur-sm" aria-hidden="true">
+            <nav class="flex flex-col items-center space-y-4 py-6" aria-label="Mobile navigation">
+                <a href="#about" class="mobile-nav-link">About</a>
+                <a href="#experience" class="mobile-nav-link">Experience</a>
+                <a href="#projects" class="mobile-nav-link">Projects</a>
+                <a href="#contact" class="mobile-nav-link">Contact</a>
+                <a href="resume.pdf" class="btn btn-primary btn-sm mt-2" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-download mr-2"></i> Download Resume
+                </a>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main id="main-content">
         <section id="home" class="relative container mx-auto px-6 py-32 flex flex-col-reverse md:flex-row items-center justify-center text-center md:text-left min-h-screen">
-             <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-900 to-cyan-900/20 opacity-50"></div>
+            <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-900 to-cyan-900/20 opacity-50"></div>
+            <div class="absolute top-20 left-10 w-72 h-72 bg-cyan-500/10 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-20 right-10 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
+            
             <div class="md:w-1/2 z-10">
-                <h1 class="text-4xl md:text-6xl font-bold text-white">Nifras MJM</h1>
-                <h2 class="text-2xl md:text-3xl text-cyan-400 mt-2" id="subtitle">Software Engineer</h2>
-                <p class="mt-4 max-w-lg mx-auto md:mx-0">Aspiring Software Developer with hands-on experience in microservices, API development, and database optimization. Passionate about developing efficient and scalable software solutions.</p>
+                <p class="text-cyan-400 font-medium mb-2 tracking-wide animate-fade-in">Hi, my name is</p>
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight">Nifras MJM</h1>
+                <h2 class="text-2xl md:text-4xl font-bold text-gray-400 mt-2">
+                    I build <span class="text-cyan-400" id="rotating-text">scalable backend systems</span>
+                </h2>
+                <p class="mt-6 text-lg max-w-lg mx-auto md:mx-0 text-gray-300 leading-relaxed">
+                    Software Engineer specializing in <strong class="text-white">Java Spring Boot</strong>, microservices architecture, and API development. Currently pursuing Computer Engineering and open to <strong class="text-white">backend & full-stack opportunities</strong>.
+                </p>
+                
+                <div class="mt-6 flex flex-wrap justify-center md:justify-start gap-2">
+                    <span class="proof-chip"><i class="fas fa-server mr-1"></i> Microservices</span>
+                    <span class="proof-chip"><i class="fas fa-database mr-1"></i> SQL Optimization</span>
+                    <span class="proof-chip"><i class="fas fa-shield-alt mr-1"></i> Secure APIs</span>
+                    <span class="proof-chip"><i class="fas fa-code-branch mr-1"></i> Agile/Scrum</span>
+                </div>
+                
+                <div class="mt-8 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-folder-open mr-2"></i> View My Work
+                    </a>
+                    <a href="resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-download mr-2"></i> Download Resume
+                    </a>
+                </div>
+                
                 <div class="mt-8 flex justify-center md:justify-start space-x-4">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    <a href="https://github.com/Nifras365" target="_blank" rel="noopener noreferrer" class="hero-social-link" aria-label="GitHub Profile">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nifras-mjm-477b05263/" target="_blank" rel="noopener noreferrer" class="hero-social-link" aria-label="LinkedIn Profile">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:nifrasmjm56@gmail.com" class="hero-social-link" aria-label="Send Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
                 </div>
             </div>
             <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center z-10">
                 <div class="profile-image-container">
-                    <img src="images/IMG_20221126_095704.jpg" alt="Nifras MJM" class="profile-image">
+                    <img src="images/IMG_20221126_095704.jpg" alt="Nifras MJM - Software Engineer" class="profile-image" loading="eager">
+                    <div class="status-indicator">
+                        <span class="status-dot"></span>
+                        <span class="text-sm">Available for hire</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+                <a href="#about" class="text-gray-500 hover:text-cyan-400 transition-colors" aria-label="Scroll to About section">
+                    <i class="fas fa-chevron-down text-2xl"></i>
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="py-24 bg-gray-800 section-fade-in">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Get to know my background, skills, and what drives me as a developer</p>
+                </div>
+                <div class="flex flex-col lg:flex-row gap-12 items-start">
+                    <div class="lg:w-1/2">
+                        <h3 class="text-2xl font-bold text-white mb-4 flex items-center">
+                            <span class="text-cyan-400 mr-3"><i class="fas fa-user"></i></span>
+                            Who I Am
+                        </h3>
+                        <p class="mb-4 text-gray-300 leading-relaxed">
+                            I'm a passionate and driven <strong class="text-white">Software Engineer</strong> currently pursuing a degree in Computer Engineering at the University of Ruhuna. With a unique blend of technical development and technical recruitment experience, I bring both coding expertise and a deep understanding of what makes great engineering teams work.
+                        </p>
+                        <p class="mb-6 text-gray-300 leading-relaxed">
+                            My core focus is on building <strong class="text-white">scalable backend systems</strong> using Java Spring Boot, designing secure RESTful APIs, and optimizing database performance. I thrive in collaborative, agile environments and am always eager to tackle complex problems with clean, maintainable solutions.
+                        </p>
+                        
+                        <div class="bg-gray-900/50 rounded-xl p-6 border border-gray-700">
+                            <h4 class="text-lg font-semibold text-white mb-3">
+                                <i class="fas fa-bullseye text-cyan-400 mr-2"></i>What I'm Looking For
+                            </h4>
+                            <ul class="space-y-2 text-gray-300">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-400 mr-2 mt-1"></i>
+                                    Backend or Full-Stack Software Engineer roles
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-400 mr-2 mt-1"></i>
+                                    Teams working with Java, Spring Boot, or modern JS frameworks
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-400 mr-2 mt-1"></i>
+                                    Remote or hybrid opportunities (flexible on location)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <h3 class="text-2xl font-bold text-white mb-6 flex items-center">
+                            <span class="text-cyan-400 mr-3"><i class="fas fa-code"></i></span>
+                            Technical Skills
+                        </h3>
+                        
+                        <div class="space-y-6">
+                            <div class="skill-category">
+                                <h4 class="skill-category-title">
+                                    <i class="fas fa-terminal mr-2"></i>Programming Languages
+                                </h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="skill-tag">Java</span>
+                                    <span class="skill-tag">Python</span>
+                                    <span class="skill-tag">JavaScript</span>
+                                    <span class="skill-tag">TypeScript</span>
+                                    <span class="skill-tag">C++</span>
+                                    <span class="skill-tag">Kotlin</span>
+                                    <span class="skill-tag">Dart</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-category">
+                                <h4 class="skill-category-title">
+                                    <i class="fas fa-layer-group mr-2"></i>Frameworks & Libraries
+                                </h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="skill-tag skill-tag-primary">Spring Boot</span>
+                                    <span class="skill-tag">React.js</span>
+                                    <span class="skill-tag">Next.js</span>
+                                    <span class="skill-tag">Vue.js</span>
+                                    <span class="skill-tag">Express.js</span>
+                                    <span class="skill-tag">FastAPI</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-category">
+                                <h4 class="skill-category-title">
+                                    <i class="fas fa-database mr-2"></i>Databases & Infrastructure
+                                </h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="skill-tag">MySQL</span>
+                                    <span class="skill-tag">PostgreSQL</span>
+                                    <span class="skill-tag">MongoDB</span>
+                                    <span class="skill-tag">Firebase</span>
+                                    <span class="skill-tag">Redis</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-category">
+                                <h4 class="skill-category-title">
+                                    <i class="fas fa-brain mr-2"></i>Machine Learning & AI
+                                </h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="skill-tag">PyTorch</span>
+                                    <span class="skill-tag">TensorFlow</span>
+                                    <span class="skill-tag">Hugging Face</span>
+                                    <span class="skill-tag">Scikit-learn</span>
+                                    <span class="skill-tag">Pandas</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-category">
+                                <h4 class="skill-category-title">
+                                    <i class="fas fa-tools mr-2"></i>Tools & Platforms
+                                </h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="skill-tag">Git</span>
+                                    <span class="skill-tag">Docker</span>
+                                    <span class="skill-tag">AWS</span>
+                                    <span class="skill-tag">Google Cloud</span>
+                                    <span class="skill-tag">Maven</span>
+                                    <span class="skill-tag">Postman</span>
+                                    <span class="skill-tag">Jira</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="py-20 bg-gray-800 section-fade-in">
+        <section id="experience" class="py-24 section-fade-in">
             <div class="container mx-auto px-6">
-                <h2 class="section-title">About Me</h2>
-                <div class="flex flex-col md:flex-row gap-12 items-start">
-                    <div class="md:w-2/3">
-                        <h3 class="text-2xl font-semibold text-white mb-4">Who I Am</h3>
-                        <p class="mb-4">I'm a passionate and driven Software Engineer currently pursuing a degree in Computer Engineering at the University of Ruhuna. With a solid background in both technical recruitment and full-stack projects, I bring a unique perspective to software development.</p>
-                        <p>My experience includes developing and maintaining microservices, designing secure APIs with Java Spring Boot, and optimizing SQL queries for enhanced performance. I thrive in collaborative environments and am always eager to learn and apply best practices in backend development.</p>
+                <div class="text-center mb-16">
+                    <h2 class="section-title">Work Experience</h2>
+                    <p class="section-subtitle">My professional journey and the impact I've made along the way</p>
+                </div>
+                <div class="max-w-4xl mx-auto">
+                    <div class="relative border-l-2 border-cyan-800 ml-6">
+                        <div class="mb-12 ml-10 timeline-item">
+                            <div class="timeline-dot">
+                                <i class="fas fa-briefcase text-xs"></i>
+                            </div>
+                            <div class="experience-card">
+                                <div class="flex flex-wrap justify-between items-start mb-2">
+                                    <div>
+                                        <h3 class="text-xl font-bold text-white">Java Backend Intern</h3>
+                                        <p class="text-cyan-400 font-medium">MegaBliss and MegaTransact Ltd</p>
+                                    </div>
+                                    <div class="text-right">
+                                        <span class="experience-badge">
+                                            <i class="fas fa-map-marker-alt mr-1"></i> Auckland, NZ (Remote)
+                                        </span>
+                                        <p class="text-gray-400 text-sm mt-1">May 2024 - Present</p>
+                                    </div>
+                                </div>
+                                <ul class="mt-4 space-y-3">
+                                    <li class="experience-item">
+                                        <i class="fas fa-caret-right text-cyan-400 mr-2" aria-hidden="true"></i>
+                                        <span>Developed and maintained <strong>5+ microservices</strong> for a vehicle booking application, handling <strong>1,000+ daily requests</strong></span>
+                                    </li>
+                                    <li class="experience-item">
+                                        <i class="fas fa-caret-right text-cyan-400 mr-2" aria-hidden="true"></i>
+                                        <span>Designed and implemented <strong>15+ secure RESTful APIs</strong> using Java Spring Boot with JWT authentication and role-based access control</span>
+                                    </li>
+                                    <li class="experience-item">
+                                        <i class="fas fa-caret-right text-cyan-400 mr-2" aria-hidden="true"></i>
+                                        <span>Optimized <strong>complex SQL queries</strong>, improving database performance by <strong>40%</strong> and reducing average response time</span>
+                                    </li>
+                                    <li class="experience-item">
+                                        <i class="fas fa-caret-right text-cyan-400 mr-2" aria-hidden="true"></i>
+                                        <span>Participated in code reviews and agile sprints, ensuring code quality through <strong>unit and integration testing</strong></span>
+                                    </li>
+                                </ul>
+                                <div class="mt-4 flex flex-wrap gap-2">
+                                    <span class="tech-tag-sm">Java</span>
+                                    <span class="tech-tag-sm">Spring Boot</span>
+                                    <span class="tech-tag-sm">MySQL</span>
+                                    <span class="tech-tag-sm">REST APIs</span>
+                                    <span class="tech-tag-sm">Git</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-12 ml-10 timeline-item">
+                            <div class="timeline-dot">
+                                <i class="fas fa-users text-xs"></i>
+                            </div>
+                            <div class="experience-card">
+                                <div class="flex flex-wrap justify-between items-start mb-2">
+                                    <div>
+                                        <h3 class="text-xl font-bold text-white">Technical Recruiter</h3>
+                                        <p class="text-cyan-400 font-medium">Hire IT People</p>
+                                    </div>
+                                    <div class="text-right">
+                                        <span class="experience-badge">
+                                            <i class="fas fa-map-marker-alt mr-1"></i> NJ, USA (Remote)
+                                        </span>
+                                        <p class="text-gray-400 text-sm mt-1">Oct 2022 - Sep 2023</p>
+                                    </div>
+                                </div>
+                                <ul class="mt-4 space-y-3">
+                                    <li class="experience-item">
+                                        <i class="fas fa-caret-right text-cyan-400 mr-2" aria-hidden="true"></i>
+                                        <span>Sourced and screened <strong>200+ technical candidates</strong> across Java, Python, Cloud, and DevOps roles</span>
+                                    </li>
+                                    <li class="experience-item">
+                                        <i class="fas fa-caret-right text-cyan-400 mr-2" aria-hidden="true"></i>
+                                        <span>Managed <strong>20+ active job postings</strong> and maintained a pipeline of qualified candidates using ATS systems</span>
+                                    </li>
+                                    <li class="experience-item">
+                                        <i class="fas fa-caret-right text-cyan-400 mr-2" aria-hidden="true"></i>
+                                        <span>Conducted rate negotiations and coordinated interview scheduling, improving hiring efficiency for client companies</span>
+                                    </li>
+                                </ul>
+                                <div class="mt-4 flex flex-wrap gap-2">
+                                    <span class="tech-tag-sm">Technical Screening</span>
+                                    <span class="tech-tag-sm">ATS Systems</span>
+                                    <span class="tech-tag-sm">Negotiation</span>
+                                    <span class="tech-tag-sm">LinkedIn Recruiter</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ml-10 timeline-item">
+                            <div class="timeline-dot timeline-dot-secondary">
+                                <i class="fas fa-graduation-cap text-xs"></i>
+                            </div>
+                            <div class="experience-card">
+                                <div class="flex flex-wrap justify-between items-start mb-2">
+                                    <div>
+                                        <h3 class="text-xl font-bold text-white">B.Sc. in Computer Engineering</h3>
+                                        <p class="text-cyan-400 font-medium">University of Ruhuna</p>
+                                    </div>
+                                    <div class="text-right">
+                                        <span class="experience-badge">
+                                            <i class="fas fa-map-marker-alt mr-1"></i> Sri Lanka
+                                        </span>
+                                        <p class="text-gray-400 text-sm mt-1">2021 - 2025</p>
+                                    </div>
+                                </div>
+                                <p class="text-gray-300 mt-2">Focused on software engineering, data structures, algorithms, and computer networks. Active participant in coding competitions and tech community events.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h3 class="text-2xl font-semibold text-white mb-4">Programming Languages</h3>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="skill-tag">C</span>
-                            <span class="skill-tag">C++</span>
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">Java</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">Kotlin</span>
-                            <span class="skill-tag">Dart</span>
-                            <span class="skill-tag">HTML</span>
-                        </div>
-
-                        <h3 class="text-2xl font-semibold text-white mb-4">Frameworks & Libraries</h3>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="skill-tag">React.js</span>
-                            <span class="skill-tag">Next.js</span>
-                            <span class="skill-tag">Vue.js</span>
-                            <span class="skill-tag">Spring Boot</span>
-                            <span class="skill-tag">Express.js</span>
-                            <span class="skill-tag">FastAPI</span>
-                        </div>
-
-                        <h3 class="text-2xl font-semibold text-white mb-4">Databases & Stacks</h3>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="skill-tag">MySQL</span>
-                            <span class="skill-tag">MongoDB</span>
-                            <span class="skill-tag">Firebase</span>
-                            <span class="skill-tag">PostgreSQL</span>
-                            <span class="skill-tag">MERN</span>
-                        </div>
-
-                        <h3 class="text-2xl font-semibold text-white mb-4">Machine Learning & AI</h3>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="skill-tag">Pandas</span>
-                            <span class="skill-tag">NumPy</span>
-                            <span class="skill-tag">Scikit-learn</span>
-                            <span class="skill-tag">PyTorch</span>
-                            <span class="skill-tag">TensorFlow</span>
-                            <span class="skill-tag">Hugging Face</span>
-                        </div>
-
-                        <h3 class="text-2xl font-semibold text-white mb-4">Tools & Platforms</h3>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="skill-tag">Git</span>
-                            <span class="skill-tag">Docker</span>
-                            <span class="skill-tag">AWS</span>
-                            <span class="skill-tag">Google Cloud</span>
-                            <span class="skill-tag">Maven</span>
-                            <span class="skill-tag">Gradle</span>
-                            <span class="skill-tag">Postman</span>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </section>
 
-        <section id="experience" class="py-20 section-fade-in">
+        <section id="projects" class="py-24 bg-gray-800 section-fade-in">
             <div class="container mx-auto px-6">
-                <h2 class="section-title">Work Experience</h2>
-                <div class="relative border-l-2 border-cyan-800 ml-6">
-                    <div class="mb-10 ml-10 timeline-item">
-                        <div class="timeline-dot"></div>
-                        <h3 class="text-xl font-semibold text-white">Java Backend Intern</h3>
-                        <p class="text-cyan-400">MegaBliss and MegaTransact Ltd | Auckland, NZ (Remote)</p>
-                        <p class="text-gray-400 text-sm">May 2024 - Present</p>
-                        <ul class="mt-4 list-disc list-inside text-gray-300">
-                            <li>Developed and maintained microservices for a vehicle booking application.</li>
-                            <li>Designed and implemented secure APIs using Java Spring Boot.</li>
-                            <li>Optimized SQL queries, improving database performance and data retrieval speed.</li>
-                            <li>Participated in code reviews and agile team meetings.</li>
-                        </ul>
-                    </div>
-                    <div class="mb-10 ml-10 timeline-item">
-                        <div class="timeline-dot"></div>
-                        <h3 class="text-xl font-semibold text-white">Technical Recruiter</h3>
-                        <p class="text-cyan-400">Hire IT People | NJ, USA (Remote)</p>
-                        <p class="text-gray-400 text-sm">Oct 2022 - Sep 2023</p>
-                         <ul class="mt-4 list-disc list-inside text-gray-300">
-                            <li>Sourced, screened, and recruited top-tier technical candidates.</li>
-                            <li>Managed job postings and candidate profiles.</li>
-                            <li>Participated in rate and salary negotiations.</li>
-                        </ul>
-                    </div>
+                <div class="text-center mb-16">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">A selection of my work showcasing full-stack development and AI/ML capabilities</p>
                 </div>
-            </div>
-        </section>
-
-        <section id="projects" class="py-20 bg-gray-800 section-fade-in">
-            <div class="container mx-auto px-6">
-                <h2 class="section-title">My Projects</h2>
                 
-                <h3 class="text-2xl font-semibold text-white mb-8 text-center">AI & Machine Learning</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-                    <div class="project-card">
-                        <div class="p-6">
-                            <h3 class="project-title">Document Summarizer with Q&A</h3>
-                            <p class="project-description">An AI-powered tool to summarize long documents and answer questions based on the content.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="tech-tag">Hugging Face</span><span class="tech-tag">FastAPI</span><span class="tech-tag">Next.js</span><span class="tech-tag">PyTorch</span>
+                <div class="mb-16">
+                    <h3 class="text-xl font-bold text-white mb-8 flex items-center justify-center">
+                        <span class="w-12 h-px bg-gray-600 mr-4"></span>
+                        <i class="fas fa-robot text-cyan-400 mr-3"></i>
+                        AI & Machine Learning
+                        <span class="w-12 h-px bg-gray-600 ml-4"></span>
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        
+                        <article class="project-card">
+                            <div class="project-card-header">
+                                <i class="fas fa-folder-open text-cyan-400 text-2xl"></i>
+                                <div class="project-card-links">
+                                    <a href="https://github.com/Nifras365" target="_blank" rel="noopener noreferrer" class="project-icon-link" aria-label="View on GitHub">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-link mr-2"></i>Live Demo</a>
-                                <a href="https://github.com/Nifras365" class="project-link"><i class="fab fa-github mr-2"></i>GitHub</a>
+                            <div class="p-6 pt-0">
+                                <h4 class="project-title">Document Summarizer with Q&A</h4>
+                                <p class="project-role"><i class="fas fa-user mr-1"></i> Solo Developer</p>
+                                <p class="project-description">An AI-powered tool to summarize long documents and answer questions based on the content using transformer models.</p>
+                                <ul class="project-highlights">
+                                    <li>Implemented RAG (Retrieval-Augmented Generation) pipeline</li>
+                                    <li>Supports PDF, DOCX, and TXT file formats</li>
+                                    <li>Real-time Q&A with context-aware responses</li>
+                                </ul>
+                                <div class="flex flex-wrap gap-2 mt-4">
+                                    <span class="tech-tag">Hugging Face</span>
+                                    <span class="tech-tag">FastAPI</span>
+                                    <span class="tech-tag">Next.js</span>
+                                    <span class="tech-tag">PyTorch</span>
+                                </div>
+                                <div class="project-links">
+                                    <span class="project-link-disabled">
+                                        <i class="fas fa-link mr-2"></i>Live Demo (Coming Soon)
+                                    </span>
+                                    <a href="https://github.com/Nifras365" target="_blank" rel="noopener noreferrer" class="project-link">
+                                        <i class="fab fa-github mr-2"></i>View Code
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="p-6">
-                            <h3 class="project-title">AI Headline Generator</h3>
-                            <p class="project-description">Generates catchy and effective headlines for articles or marketing content using generative AI models.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                               <span class="tech-tag">Hugging Face</span><span class="tech-tag">FastAPI</span><span class="tech-tag">Next.js</span><span class="tech-tag">PyTorch</span>
+                        </article>
+                        
+                        <article class="project-card">
+                            <div class="project-card-header">
+                                <i class="fas fa-folder-open text-cyan-400 text-2xl"></i>
+                                <div class="project-card-links">
+                                    <a href="https://github.com/Nifras365" target="_blank" rel="noopener noreferrer" class="project-icon-link" aria-label="View on GitHub">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-link mr-2"></i>Live Demo</a>
-                                <a href="https://github.com/Nifras365" class="project-link"><i class="fab fa-github mr-2"></i>GitHub</a>
+                            <div class="p-6 pt-0">
+                                <h4 class="project-title">AI Headline Generator</h4>
+                                <p class="project-role"><i class="fas fa-user mr-1"></i> Solo Developer</p>
+                                <p class="project-description">Generates catchy and effective headlines for articles or marketing content using fine-tuned generative AI models.</p>
+                                <ul class="project-highlights">
+                                    <li>Fine-tuned GPT-2 on 50K+ marketing headlines</li>
+                                    <li>A/B testing integration for headline optimization</li>
+                                    <li>REST API for easy integration with CMS</li>
+                                </ul>
+                                <div class="flex flex-wrap gap-2 mt-4">
+                                    <span class="tech-tag">Hugging Face</span>
+                                    <span class="tech-tag">FastAPI</span>
+                                    <span class="tech-tag">Next.js</span>
+                                    <span class="tech-tag">PyTorch</span>
+                                </div>
+                                <div class="project-links">
+                                    <span class="project-link-disabled">
+                                        <i class="fas fa-link mr-2"></i>Live Demo (Coming Soon)
+                                    </span>
+                                    <a href="https://github.com/Nifras365" target="_blank" rel="noopener noreferrer" class="project-link">
+                                        <i class="fab fa-github mr-2"></i>View Code
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="p-6">
-                            <h3 class="project-title">Text-to-Image Generator</h3>
-                            <p class="project-description">A creative tool that transforms textual descriptions into visually stunning images using diffusion models.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="tech-tag">Hugging Face</span><span class="tech-tag">FastAPI</span><span class="tech-tag">Vue.js</span><span class="tech-tag">PyTorch</span>
+                        </article>
+                        
+                        <article class="project-card">
+                            <div class="project-card-header">
+                                <i class="fas fa-folder-open text-cyan-400 text-2xl"></i>
+                                <div class="project-card-links">
+                                    <a href="https://github.com/Nifras365" target="_blank" rel="noopener noreferrer" class="project-icon-link" aria-label="View on GitHub">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-link mr-2"></i>Live Demo</a>
-                                <a href="https://github.com/Nifras365" class="project-link"><i class="fab fa-github mr-2"></i>GitHub</a>
+                            <div class="p-6 pt-0">
+                                <h4 class="project-title">Text-to-Image Generator</h4>
+                                <p class="project-role"><i class="fas fa-user mr-1"></i> Solo Developer</p>
+                                <p class="project-description">A creative tool that transforms textual descriptions into visually stunning images using Stable Diffusion models.</p>
+                                <ul class="project-highlights">
+                                    <li>Integrated Stable Diffusion 2.1 for image generation</li>
+                                    <li>Prompt engineering with negative prompts support</li>
+                                    <li>Image gallery with download and share options</li>
+                                </ul>
+                                <div class="flex flex-wrap gap-2 mt-4">
+                                    <span class="tech-tag">Hugging Face</span>
+                                    <span class="tech-tag">FastAPI</span>
+                                    <span class="tech-tag">Vue.js</span>
+                                    <span class="tech-tag">PyTorch</span>
+                                </div>
+                                <div class="project-links">
+                                    <span class="project-link-disabled">
+                                        <i class="fas fa-link mr-2"></i>Live Demo (Coming Soon)
+                                    </span>
+                                    <a href="https://github.com/Nifras365" target="_blank" rel="noopener noreferrer" class="project-link">
+                                        <i class="fab fa-github mr-2"></i>View Code
+                                    </a>
+                                </div>
                             </div>
-                        </div>
+                        </article>
                     </div>
                 </div>
 
-                <h3 class="text-2xl font-semibold text-white mb-8 text-center">Web Development</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="project-card">
-                        <div class="p-6">
-                            <h3 class="project-title">Online Recruitment Platform</h3>
-                            <p class="project-description">A full-stack MERN platform for employers and jobseekers, with an alternative backend in Spring Boot.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="tech-tag">MERN</span><span class="tech-tag">Spring Boot</span><span class="tech-tag">MySQL</span>
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-8 flex items-center justify-center">
+                        <span class="w-12 h-px bg-gray-600 mr-4"></span>
+                        <i class="fas fa-globe text-cyan-400 mr-3"></i>
+                        Web Development
+                        <span class="w-12 h-px bg-gray-600 ml-4"></span>
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        
+                        <article class="project-card project-card-featured">
+                            <div class="featured-badge">Featured</div>
+                            <div class="project-card-header">
+                                <i class="fas fa-folder-open text-cyan-400 text-2xl"></i>
+                                <div class="project-card-links">
+                                    <a href="https://github.com/Nifras365" target="_blank" rel="noopener noreferrer" class="project-icon-link" aria-label="View on GitHub">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-link mr-2"></i>Live Demo</a>
-                                <a href="https://github.com/Nifras365" class="project-link"><i class="fab fa-github mr-2"></i>GitHub</a>
+                            <div class="p-6 pt-0">
+                                <h4 class="project-title">Online Recruitment Platform</h4>
+                                <p class="project-role"><i class="fas fa-user mr-1"></i> Full-Stack Developer</p>
+                                <p class="project-description">A comprehensive MERN platform connecting employers and job seekers, with an alternative Spring Boot backend.</p>
+                                <ul class="project-highlights">
+                                    <li>Built dual backend (Node.js + Spring Boot) for comparison</li>
+                                    <li>JWT authentication with role-based access control</li>
+                                    <li>Advanced search with filters and real-time notifications</li>
+                                </ul>
+                                <div class="flex flex-wrap gap-2 mt-4">
+                                    <span class="tech-tag">MERN</span>
+                                    <span class="tech-tag">Spring Boot</span>
+                                    <span class="tech-tag">MySQL</span>
+                                    <span class="tech-tag">JWT</span>
+                                </div>
+                                <div class="project-links">
+                                    <span class="project-link-disabled">
+                                        <i class="fas fa-link mr-2"></i>Live Demo (Coming Soon)
+                                    </span>
+                                    <a href="https://github.com/Nifras365" target="_blank" rel="noopener noreferrer" class="project-link">
+                                        <i class="fab fa-github mr-2"></i>View Code
+                                    </a>
+                                </div>
                             </div>
-                        </div>
+                        </article>
+                        
+                        <article class="project-card">
+                            <div class="project-card-header">
+                                <i class="fas fa-folder-open text-cyan-400 text-2xl"></i>
+                                <div class="project-card-links">
+                                    <a href="https://github.com/Nifras365" target="_blank" rel="noopener noreferrer" class="project-icon-link" aria-label="View on GitHub">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="p-6 pt-0">
+                                <h4 class="project-title">Online Laptop Store</h4>
+                                <p class="project-role"><i class="fas fa-user mr-1"></i> Full-Stack Developer</p>
+                                <p class="project-description">An e-commerce platform for laptops with user accounts, shopping carts, payments, and admin dashboard.</p>
+                                <ul class="project-highlights">
+                                    <li>Integrated Stripe for secure payment processing</li>
+                                    <li>Admin dashboard with inventory management</li>
+                                    <li>Responsive design with cart persistence</li>
+                                </ul>
+                                <div class="flex flex-wrap gap-2 mt-4">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Spring Boot</span>
+                                    <span class="tech-tag">PostgreSQL</span>
+                                    <span class="tech-tag">Stripe</span>
+                                </div>
+                                <div class="project-links">
+                                    <span class="project-link-disabled">
+                                        <i class="fas fa-link mr-2"></i>Live Demo (Coming Soon)
+                                    </span>
+                                    <a href="https://github.com/Nifras365" target="_blank" rel="noopener noreferrer" class="project-link">
+                                        <i class="fab fa-github mr-2"></i>View Code
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="project-card">
+                            <div class="project-card-header">
+                                <i class="fas fa-folder-open text-cyan-400 text-2xl"></i>
+                                <div class="project-card-links">
+                                    <a href="https://github.com/Nifras365" target="_blank" rel="noopener noreferrer" class="project-icon-link" aria-label="View on GitHub">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="p-6 pt-0">
+                                <h4 class="project-title">Faculty Sports Management</h4>
+                                <p class="project-role"><i class="fas fa-users mr-1"></i> Project Manager & Backend Dev</p>
+                                <p class="project-description">A team project to manage faculty sports activities, events, and team registrations with real-time updates.</p>
+                                <ul class="project-highlights">
+                                    <li>Led a team of 5 using Agile/Scrum methodology</li>
+                                    <li>Built REST APIs for event and team management</li>
+                                    <li>Real-time score updates with WebSocket</li>
+                                </ul>
+                                <div class="flex flex-wrap gap-2 mt-4">
+                                    <span class="tech-tag">MERN</span>
+                                    <span class="tech-tag">Tailwind</span>
+                                    <span class="tech-tag">Socket.io</span>
+                                    <span class="tech-tag">Agile</span>
+                                </div>
+                                <div class="project-links">
+                                    <span class="project-link-disabled">
+                                        <i class="fas fa-link mr-2"></i>Live Demo (Coming Soon)
+                                    </span>
+                                    <a href="https://github.com/Nifras365" target="_blank" rel="noopener noreferrer" class="project-link">
+                                        <i class="fab fa-github mr-2"></i>View Code
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
                     </div>
-                    <div class="project-card">
-                        <div class="p-6">
-                            <h3 class="project-title">Online Laptop Store</h3>
-                            <p class="project-description">An e-commerce site for laptops with user accounts, shopping carts, and an admin interface.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="tech-tag">React</span><span class="tech-tag">Spring Boot</span><span class="tech-tag">PostgreSQL</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-link mr-2"></i>Live Demo</a>
-                                <a href="https://github.com/Nifras365" class="project-link"><i class="fab fa-github mr-2"></i>GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="p-6">
-                            <h3 class="project-title">Faculty Sports Management Website</h3>
-                            <p class="project-description">Group project to manage faculty sports activities, where I served as Project Manager & Backend Developer.</p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="tech-tag">MERN</span><span class="tech-tag">Tailwind</span><span class="tech-tag">Agile</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-link mr-2"></i>Live Demo</a>
-                                <a href="https://github.com/Nifras365" class="project-link"><i class="fab fa-github mr-2"></i>GitHub</a>
-                            </div>
-                        </div>
-                    </div>
+                </div>
+                
+                <div class="text-center mt-12">
+                    <a href="https://github.com/Nifras365?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                        <i class="fab fa-github mr-2"></i> View All Projects on GitHub
+                    </a>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="py-20 section-fade-in">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="text-lg text-gray-400 mt-4 max-w-2xl mx-auto">I'm currently looking for new opportunities. If you have a project in mind or just want to say hi, feel free to reach out!</p>
-                <a href="mailto:nifrasmjm56@gmail.com" class="mt-8 inline-block btn btn-primary">Say Hello</a>
-                <div class="mt-12 flex justify-center space-x-6">
-                    <a href="https://www.linkedin.com/in/nifras-mjm-477b05263/" aria-label="LinkedIn Profile" class="social-link">
-                        <i class="fab fa-linkedin-in text-2xl"></i>
-                    </a>
-                    <a href="https://github.com/Nifras365" target="_blank" aria-label="GitHub Profile" class="social-link">
-                        <i class="fab fa-github text-2xl"></i>
-                    </a>
+        <section id="contact" class="py-24 section-fade-in">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Have a project in mind or want to discuss opportunities? I'd love to hear from you!</p>
+                </div>
+                
+                <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white mb-4">Let's Connect</h3>
+                            <p class="text-gray-300 leading-relaxed">
+                                I'm currently looking for <strong class="text-white">backend and full-stack opportunities</strong>. Whether you have a question, a project proposal, or just want to say hi, my inbox is always open!
+                            </p>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-400 text-sm">Email</p>
+                                    <a href="mailto:nifrasmjm56@gmail.com" class="text-white hover:text-cyan-400 transition-colors">
+                                        nifrasmjm56@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-400 text-sm">LinkedIn</p>
+                                    <a href="https://www.linkedin.com/in/nifras-mjm-477b05263/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-cyan-400 transition-colors">
+                                        linkedin.com/in/nifras-mjm
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-400 text-sm">GitHub</p>
+                                    <a href="https://github.com/Nifras365" target="_blank" rel="noopener noreferrer" class="text-white hover:text-cyan-400 transition-colors">
+                                        github.com/Nifras365
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-info-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <p class="text-gray-400 text-sm">Location</p>
+                                    <p class="text-white">Sri Lanka (GMT+5:30) · Open to Remote</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="inline-flex items-center gap-2 bg-green-900/30 border border-green-700/50 rounded-full px-4 py-2 text-sm">
+                            <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                            <span class="text-green-400">Usually responds within 24 hours</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700">
+                        <form id="contact-form" action="https://formsubmit.co/nifrasmjm56@gmail.com" method="POST" class="space-y-6" novalidate>
+                            <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            <div class="form-group">
+                                <label for="name" class="form-label">
+                                    Name <span class="text-red-400">*</span>
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="name" 
+                                    name="name" 
+                                    class="form-input" 
+                                    placeholder="John Doe"
+                                    required
+                                    autocomplete="name"
+                                    aria-describedby="name-error"
+                                >
+                                <p id="name-error" class="form-error" aria-live="polite"></p>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">
+                                    Email <span class="text-red-400">*</span>
+                                </label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    class="form-input" 
+                                    placeholder="john@example.com"
+                                    required
+                                    autocomplete="email"
+                                    aria-describedby="email-error"
+                                >
+                                <p id="email-error" class="form-error" aria-live="polite"></p>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject" class="form-label">
+                                    Subject <span class="text-red-400">*</span>
+                                </label>
+                                <select 
+                                    id="subject" 
+                                    name="subject" 
+                                    class="form-input"
+                                    required
+                                    aria-describedby="subject-error"
+                                >
+                                    <option value="">Select a topic...</option>
+                                    <option value="job-opportunity">Job Opportunity</option>
+                                    <option value="freelance-project">Freelance Project</option>
+                                    <option value="collaboration">Collaboration</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <p id="subject-error" class="form-error" aria-live="polite"></p>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">
+                                    Message <span class="text-red-400">*</span>
+                                </label>
+                                <textarea 
+                                    id="message" 
+                                    name="message" 
+                                    rows="5" 
+                                    class="form-input resize-none" 
+                                    placeholder="Tell me about your project or opportunity..."
+                                    required
+                                    aria-describedby="message-error"
+                                ></textarea>
+                                <p id="message-error" class="form-error" aria-live="polite"></p>
+                            </div>
+                            
+                            <input type="text" name="_honey" style="display:none">
+                            
+                            <button 
+                                type="submit" 
+                                id="submit-btn"
+                                class="btn btn-primary w-full justify-center"
+                            >
+                                <span class="btn-text">
+                                    <i class="fas fa-paper-plane mr-2"></i> Send Message
+                                </span>
+                                <span class="btn-loading hidden">
+                                    <i class="fas fa-spinner fa-spin mr-2"></i> Sending...
+                                </span>
+                            </button>
+                            
+                            <div id="form-status" class="hidden text-center p-4 rounded-lg" aria-live="polite"></div>
+                        </form>
+                        
+                        <p class="text-center text-gray-400 text-sm mt-6">
+                            Prefer email? Reach out directly at 
+                            <a href="mailto:nifrasmjm56@gmail.com" class="text-cyan-400 hover:underline">nifrasmjm56@gmail.com</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="bg-gray-800 border-t border-gray-700">
-        <div class="container mx-auto px-6 py-6 text-center text-gray-500">
-            <p>&copy; 2024 Nifras MJM. All Rights Reserved.</p>
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <a href="#home" class="text-xl font-bold text-white">
+                        <span class="text-cyan-400">&lt;</span>Nifras<span class="text-cyan-400">/&gt;</span>
+                    </a>
+                    <p class="text-gray-400 mt-3 text-sm">
+                        Software Engineer specializing in Java Spring Boot, microservices, and building scalable backend systems.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <nav class="space-y-2 text-sm" aria-label="Footer navigation">
+                        <a href="#about" class="block text-gray-400 hover:text-cyan-400 transition-colors">About</a>
+                        <a href="#experience" class="block text-gray-400 hover:text-cyan-400 transition-colors">Experience</a>
+                        <a href="#projects" class="block text-gray-400 hover:text-cyan-400 transition-colors">Projects</a>
+                        <a href="#contact" class="block text-gray-400 hover:text-cyan-400 transition-colors">Contact</a>
+                        <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="block text-gray-400 hover:text-cyan-400 transition-colors">Resume</a>
+                    </nav>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/in/nifras-mjm-477b05263/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="footer-social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Nifras365" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" class="footer-social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:nifrasmjm56@gmail.com" aria-label="Send Email" class="footer-social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-400 text-sm mt-4">
+                        <i class="fas fa-map-marker-alt mr-2"></i>Sri Lanka · GMT+5:30
+                    </p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2024 Nifras MJM. All Rights Reserved.</p>
+                <p class="mt-2">Built with <i class="fas fa-heart text-red-400"></i> using Tailwind CSS</p>
+            </div>
         </div>
     </footer>
 
