@@ -699,6 +699,39 @@ body {
 }
 
 /* ============================
+   Certification Cards
+   ============================ */
+.cert-card {
+    display: block;
+    background: var(--color-bg-medium);
+    border: 1px solid var(--color-bg-light);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    transition: all var(--transition-normal);
+    text-decoration: none;
+}
+
+.cert-card:hover {
+    border-color: var(--color-primary);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-card-hover);
+}
+
+.cert-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: rgba(6, 182, 212, 0.1);
+    border: 1px solid rgba(6, 182, 212, 0.3);
+    border-radius: var(--radius-md);
+    color: var(--color-primary);
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+/* ============================
    Footer Styles
    ============================ */
 .footer-social-link {
